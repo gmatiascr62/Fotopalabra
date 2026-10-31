@@ -21,6 +21,7 @@ Carpeta: `app/src/main/assets/niveles/`
 
 - Formatos: `.png`, `.jpg`, `.jpeg` o `.webp` (webp ocupa menos).
 - Tamaño recomendado: **cuadrada, 768×768 o 1024×1024 px**. La app las reduce al tamaño de la pantalla para ahorrar memoria.
+- Si el nivel tiene **una sola imagen**, también puede ser apaisada o vertical (ej. 1408×768): se muestra con su proporción real. Cuando hay varias imágenes se recomienda que sean cuadradas.
 - Sin espacios ni tildes en el nombre del archivo.
 - La nomenclatura `nivel_XXX` es una convención: lo que manda es el nombre escrito en `niveles.json`.
 
@@ -55,6 +56,7 @@ las imágenes que faltan con su descripción (útil como lista de tareas para Ch
 | nivel_018_a/_b/_c.png | Bufanda / Copo de nieve / Muñeco de nieve → INVIERNO |
 | nivel_019_a/_b/_c.png | Pizarrón con tiza / Mochila / Lápiz y cuaderno → ESCUELA |
 | nivel_020_a/_b/_c.png | Casco rojo / Manguera / Camión rojo con escalera → BOMBERO |
+| ~~nivel_021.jpg~~ ✔ | Ya cargada: una gran hada sobre un pueblo → GRANADA (gran + hada) |
 
 > Consejo para ChatGPT: pedí "ilustración plana, colorida, fondo blanco liso, sin texto,
 > estilo juego infantil, formato cuadrado". Mantener el mismo estilo en todas ayuda a que

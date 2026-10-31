@@ -5,7 +5,7 @@ palabra que representan una o varias imágenes (por ejemplo: **sol + dado = SOLD
 
 - Kotlin + Jetpack Compose, Android 7.0 (API 24) o superior.
 - Sin internet, sin registro, sin APIs pagas. Sin permisos especiales.
-- 20 niveles de prueba (7 fáciles, 7 intermedios, 6 difíciles).
+- 21 niveles de prueba (7 fáciles, 7 intermedios, 7 difíciles). El nivel 21 ya tiene su ilustración definitiva.
 - **Para agregar imágenes o niveles, ver [NIVELES.md](NIVELES.md).**
 
 ## Cómo se juega

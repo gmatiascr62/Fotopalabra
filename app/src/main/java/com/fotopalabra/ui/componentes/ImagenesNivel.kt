@@ -10,7 +10,9 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.aspectRatio
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.sizeIn
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Text
@@ -62,6 +64,17 @@ fun GrupoImagenes(
         }.maxBy { it.second.value }
         val columnas = (n + filas - 1) / filas
 
+        if (imagenes.size == 1) {
+            // Una sola imagen: se muestra con su proporción real (puede ser apaisada).
+            ImagenNivel(
+                imagenes.first(),
+                cargador,
+                Modifier.sizeIn(maxWidth = min(maxWidth, 560.dp), maxHeight = min(maxHeight, 560.dp)),
+                respetarProporcion = true,
+            )
+            return@BoxWithConstraints
+        }
+
         Column(verticalArrangement = Arrangement.spacedBy(12.dp), horizontalAlignment = Alignment.CenterHorizontally) {
             imagenes.chunked(columnas).forEach { grupo ->
                 Row(verticalAlignment = Alignment.CenterVertically) {
@@ -89,14 +102,21 @@ private fun Signo(ancho: Dp) {
 
 /** Una ilustración del nivel. Si el archivo todavía no existe, muestra el marcador temporal. */
 @Composable
-fun ImagenNivel(imagen: Imagen, cargador: CargadorImagenes, modifier: Modifier = Modifier) {
-    val ladoPx = with(LocalDensity.current) { 340.dp.roundToPx() }
+fun ImagenNivel(
+    imagen: Imagen,
+    cargador: CargadorImagenes,
+    modifier: Modifier = Modifier,
+    respetarProporcion: Boolean = false,
+) {
+    val ladoPx = with(LocalDensity.current) { 560.dp.roundToPx() }
     val bitmap by produceState<ImageBitmap?>(null, imagen.archivo) {
         value = cargador.cargar(imagen.archivo, ladoPx)
     }
     val forma = RoundedCornerShape(20.dp)
+    val proporcion = bitmap?.takeIf { respetarProporcion }?.let { it.width.toFloat() / it.height } ?: 1f
     Box(
         modifier
+            .aspectRatio(proporcion)
             .shadow(8.dp, forma)
             .clip(forma)
             .background(Colores.Blanco),

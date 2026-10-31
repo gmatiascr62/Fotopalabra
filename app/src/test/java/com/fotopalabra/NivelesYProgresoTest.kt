@@ -23,6 +23,8 @@ class NivelesYProgresoTest {
         val catalogo = CargadorNiveles.cargar(archivos)
         assertEquals(emptyList<String>(), catalogo.errores)
         assertTrue(catalogo.total >= 20)
+        // Toda imagen referenciada debe tener un nombre único.
+        assertEquals(catalogo.archivosImagen.size, catalogo.niveles.sumOf { it.imagenes.size })
         catalogo.niveles.forEach { MotorJuego.nuevaPartida(it.solucion, it.id.toLong(), it.fichas) }
         assertEquals(Dificultad.FACIL, catalogo.niveles.first().dificultad)
     }

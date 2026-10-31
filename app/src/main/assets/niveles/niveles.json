@@ -304,6 +304,18 @@
         }
       ],
       "pista": "Profesión de quien apaga incendios"
+    },
+    {
+      "id": 21,
+      "respuesta": "Granada",
+      "dificultad": "dificil",
+      "imagenes": [
+        {
+          "archivo": "nivel_021.jpg",
+          "descripcion": "Una gran hada violeta volando sobre un pueblo"
+        }
+      ],
+      "pista": "Gran + hada: ciudad de España y también una fruta"
     }
   ]
 }
