@@ -1,0 +1,309 @@
+{
+  "version": 1,
+  "niveles": [
+    {
+      "id": 1,
+      "respuesta": "Sol",
+      "dificultad": "facil",
+      "imagenes": [
+        {
+          "archivo": "nivel_001.png",
+          "descripcion": "Un sol amarillo y brillante con rayos"
+        }
+      ],
+      "pista": "Brilla en el cielo durante el día"
+    },
+    {
+      "id": 2,
+      "respuesta": "Gato",
+      "dificultad": "facil",
+      "imagenes": [
+        {
+          "archivo": "nivel_002.png",
+          "descripcion": "Un gato sentado"
+        }
+      ],
+      "pista": "Maúlla y le encanta cazar ratones"
+    },
+    {
+      "id": 3,
+      "respuesta": "Casa",
+      "dificultad": "facil",
+      "imagenes": [
+        {
+          "archivo": "nivel_003.png",
+          "descripcion": "Una casa con techo rojo, puerta y ventanas"
+        }
+      ],
+      "pista": "Es el lugar donde vivís"
+    },
+    {
+      "id": 4,
+      "respuesta": "Luna",
+      "dificultad": "facil",
+      "imagenes": [
+        {
+          "archivo": "nivel_004.png",
+          "descripcion": "Una luna en cuarto creciente en el cielo nocturno"
+        }
+      ],
+      "pista": "Ilumina la noche y tiene fases"
+    },
+    {
+      "id": 5,
+      "respuesta": "Árbol",
+      "dificultad": "facil",
+      "imagenes": [
+        {
+          "archivo": "nivel_005.png",
+          "descripcion": "Un árbol grande con tronco marrón y copa verde"
+        }
+      ],
+      "pista": "Tiene tronco, ramas y hojas"
+    },
+    {
+      "id": 6,
+      "respuesta": "Pelota",
+      "dificultad": "facil",
+      "imagenes": [
+        {
+          "archivo": "nivel_006.png",
+          "descripcion": "Una pelota de colores"
+        }
+      ],
+      "pista": "Se patea, se lanza y rebota"
+    },
+    {
+      "id": 7,
+      "respuesta": "Manzana",
+      "dificultad": "facil",
+      "imagenes": [
+        {
+          "archivo": "nivel_007.png",
+          "descripcion": "Una manzana roja con una hoja"
+        }
+      ],
+      "pista": "Fruta roja o verde; dicen que una por día aleja al médico"
+    },
+    {
+      "id": 8,
+      "respuesta": "Soldado",
+      "dificultad": "intermedio",
+      "imagenes": [
+        {
+          "archivo": "nivel_008_a.png",
+          "descripcion": "Un sol"
+        },
+        {
+          "archivo": "nivel_008_b.png",
+          "descripcion": "Un dado de seis caras"
+        }
+      ],
+      "pista": "Sol + dado: usa uniforme y marcha"
+    },
+    {
+      "id": 9,
+      "respuesta": "Caracol",
+      "dificultad": "intermedio",
+      "imagenes": [
+        {
+          "archivo": "nivel_009_a.png",
+          "descripcion": "Una cara sonriente"
+        },
+        {
+          "archivo": "nivel_009_b.png",
+          "descripcion": "Una col (repollo)"
+        }
+      ],
+      "pista": "Cara + col: lleva su casa a cuestas"
+    },
+    {
+      "id": 10,
+      "respuesta": "Telaraña",
+      "dificultad": "intermedio",
+      "imagenes": [
+        {
+          "archivo": "nivel_010_a.png",
+          "descripcion": "Un rollo de tela"
+        },
+        {
+          "archivo": "nivel_010_b.png",
+          "descripcion": "Una araña"
+        }
+      ],
+      "pista": "Tela + araña: la teje un animal de ocho patas"
+    },
+    {
+      "id": 11,
+      "respuesta": "Pantalón",
+      "dificultad": "intermedio",
+      "imagenes": [
+        {
+          "archivo": "nivel_011_a.png",
+          "descripcion": "Un pan"
+        },
+        {
+          "archivo": "nivel_011_b.png",
+          "descripcion": "El talón de un pie"
+        }
+      ],
+      "pista": "Pan + talón: prenda que cubre las piernas"
+    },
+    {
+      "id": 12,
+      "respuesta": "Camaleón",
+      "dificultad": "intermedio",
+      "imagenes": [
+        {
+          "archivo": "nivel_012_a.png",
+          "descripcion": "Una cama"
+        },
+        {
+          "archivo": "nivel_012_b.png",
+          "descripcion": "Un león"
+        }
+      ],
+      "pista": "Cama + león: cambia de color para esconderse"
+    },
+    {
+      "id": 13,
+      "respuesta": "Arcoíris",
+      "dificultad": "intermedio",
+      "imagenes": [
+        {
+          "archivo": "nivel_013_a.png",
+          "descripcion": "Un arco con flecha"
+        },
+        {
+          "archivo": "nivel_013_b.png",
+          "descripcion": "El iris de un ojo en primer plano"
+        }
+      ],
+      "pista": "Arco + iris: aparece después de la lluvia"
+    },
+    {
+      "id": 14,
+      "respuesta": "Baloncesto",
+      "dificultad": "intermedio",
+      "imagenes": [
+        {
+          "archivo": "nivel_014_a.png",
+          "descripcion": "Un balón"
+        },
+        {
+          "archivo": "nivel_014_b.png",
+          "descripcion": "Un cesto de mimbre"
+        }
+      ],
+      "pista": "Balón + cesto: deporte de aros y canastas"
+    },
+    {
+      "id": 15,
+      "respuesta": "Marte",
+      "dificultad": "dificil",
+      "imagenes": [
+        {
+          "archivo": "nivel_015_a.png",
+          "descripcion": "El mar con olas"
+        },
+        {
+          "archivo": "nivel_015_b.png",
+          "descripcion": "Una taza de té"
+        }
+      ],
+      "pista": "Mar + té: es un planeta rojo"
+    },
+    {
+      "id": 16,
+      "respuesta": "Pirata",
+      "dificultad": "dificil",
+      "imagenes": [
+        {
+          "archivo": "nivel_016_a.png",
+          "descripcion": "El símbolo matemático pi (π)"
+        },
+        {
+          "archivo": "nivel_016_b.png",
+          "descripcion": "Una rata"
+        }
+      ],
+      "pista": "Pi + rata: navega buscando tesoros"
+    },
+    {
+      "id": 17,
+      "respuesta": "Remate",
+      "dificultad": "dificil",
+      "imagenes": [
+        {
+          "archivo": "nivel_017_a.png",
+          "descripcion": "Una nota musical con la sílaba RE en un pentagrama"
+        },
+        {
+          "archivo": "nivel_017_b.png",
+          "descripcion": "Un mate con bombilla"
+        }
+      ],
+      "pista": "Re + mate: se usa en el fútbol y en las subastas"
+    },
+    {
+      "id": 18,
+      "respuesta": "Invierno",
+      "dificultad": "dificil",
+      "imagenes": [
+        {
+          "archivo": "nivel_018_a.png",
+          "descripcion": "Una bufanda de lana"
+        },
+        {
+          "archivo": "nivel_018_b.png",
+          "descripcion": "Un copo de nieve"
+        },
+        {
+          "archivo": "nivel_018_c.png",
+          "descripcion": "Un muñeco de nieve"
+        }
+      ],
+      "pista": "La estación más fría del año"
+    },
+    {
+      "id": 19,
+      "respuesta": "Escuela",
+      "dificultad": "dificil",
+      "imagenes": [
+        {
+          "archivo": "nivel_019_a.png",
+          "descripcion": "Un pizarrón con tiza"
+        },
+        {
+          "archivo": "nivel_019_b.png",
+          "descripcion": "Una mochila"
+        },
+        {
+          "archivo": "nivel_019_c.png",
+          "descripcion": "Un lápiz y un cuaderno"
+        }
+      ],
+      "pista": "Lugar donde aprendés con tus compañeros"
+    },
+    {
+      "id": 20,
+      "respuesta": "Bombero",
+      "dificultad": "dificil",
+      "imagenes": [
+        {
+          "archivo": "nivel_020_a.png",
+          "descripcion": "Un casco rojo"
+        },
+        {
+          "archivo": "nivel_020_b.png",
+          "descripcion": "Una manguera"
+        },
+        {
+          "archivo": "nivel_020_c.png",
+          "descripcion": "Un camión rojo con escalera"
+        }
+      ],
+      "pista": "Profesión de quien apaga incendios"
+    }
+  ]
+}
