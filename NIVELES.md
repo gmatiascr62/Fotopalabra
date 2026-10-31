@@ -57,7 +57,7 @@ las imágenes que faltan con su descripción (útil como lista de tareas para Ch
 | nivel_019_a/_b/_c.png | Pizarrón con tiza / Mochila / Lápiz y cuaderno → ESCUELA |
 | nivel_020_a/_b/_c.png | Casco rojo / Manguera / Camión rojo con escalera → BOMBERO |
 | ~~nivel_021.jpg~~ ✔ | Ya cargada: una gran hada sobre un pueblo → GRANADA (gran + hada) |
-| nivel_022.png | Un limón con antiparras nadando en una pileta → LIMONADA (limón + nada) |
+| ~~nivel_022.jpg~~ ✔ | Ya cargada: un limón con antiparras nadando → LIMONADA (limón + nada) |
 
 > Consejo para ChatGPT: pedí "ilustración plana, colorida, fondo blanco liso, sin texto,
 > estilo juego infantil, formato cuadrado". Mantener el mismo estilo en todas ayuda a que
