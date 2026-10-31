@@ -65,7 +65,7 @@ class NivelesYProgresoTest {
         val n2 = catalogo.niveles[1]
         assertFalse(ReglasProgreso.estaDesbloqueado(repo.actual, n2))
 
-        repo.actualizar { ReglasProgreso.guardarPistas(it, n1.id, PistasNivel(textoVisible = true)) }
+        repo.actualizar { ReglasProgreso.guardarPistas(it, n1.id, PistasNivel(letrasEliminadas = true)) }
         var ganadas = 0
         repo.actualizar { ReglasProgreso.completar(it, n1).also { r -> ganadas = r.monedasGanadas }.progreso }
         assertEquals(Dificultad.FACIL.recompensa, ganadas)

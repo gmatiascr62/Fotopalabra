@@ -10,8 +10,7 @@
           "archivo": "nivel_001.png",
           "descripcion": "Un sol amarillo y brillante con rayos"
         }
-      ],
-      "pista": "Brilla en el cielo durante el día"
+      ]
     },
     {
       "id": 2,
@@ -22,8 +21,7 @@
           "archivo": "nivel_002.png",
           "descripcion": "Un gato sentado"
         }
-      ],
-      "pista": "Maúlla y le encanta cazar ratones"
+      ]
     },
     {
       "id": 3,
@@ -34,8 +32,7 @@
           "archivo": "nivel_003.png",
           "descripcion": "Una casa con techo rojo, puerta y ventanas"
         }
-      ],
-      "pista": "Es el lugar donde vivís"
+      ]
     },
     {
       "id": 4,
@@ -46,8 +43,7 @@
           "archivo": "nivel_004.png",
           "descripcion": "Una luna en cuarto creciente en el cielo nocturno"
         }
-      ],
-      "pista": "Ilumina la noche y tiene fases"
+      ]
     },
     {
       "id": 5,
@@ -58,8 +54,7 @@
           "archivo": "nivel_005.png",
           "descripcion": "Un árbol grande con tronco marrón y copa verde"
         }
-      ],
-      "pista": "Tiene tronco, ramas y hojas"
+      ]
     },
     {
       "id": 6,
@@ -70,8 +65,7 @@
           "archivo": "nivel_006.png",
           "descripcion": "Una pelota de colores"
         }
-      ],
-      "pista": "Se patea, se lanza y rebota"
+      ]
     },
     {
       "id": 7,
@@ -82,8 +76,7 @@
           "archivo": "nivel_007.png",
           "descripcion": "Una manzana roja con una hoja"
         }
-      ],
-      "pista": "Fruta roja o verde; dicen que una por día aleja al médico"
+      ]
     },
     {
       "id": 8,
@@ -98,8 +91,7 @@
           "archivo": "nivel_008_b.png",
           "descripcion": "Un dado de seis caras"
         }
-      ],
-      "pista": "Sol + dado: usa uniforme y marcha"
+      ]
     },
     {
       "id": 9,
@@ -114,8 +106,7 @@
           "archivo": "nivel_009_b.png",
           "descripcion": "Una col (repollo)"
         }
-      ],
-      "pista": "Cara + col: lleva su casa a cuestas"
+      ]
     },
     {
       "id": 10,
@@ -130,8 +121,7 @@
           "archivo": "nivel_010_b.png",
           "descripcion": "Una araña"
         }
-      ],
-      "pista": "Tela + araña: la teje un animal de ocho patas"
+      ]
     },
     {
       "id": 11,
@@ -146,8 +136,7 @@
           "archivo": "nivel_011_b.png",
           "descripcion": "El talón de un pie"
         }
-      ],
-      "pista": "Pan + talón: prenda que cubre las piernas"
+      ]
     },
     {
       "id": 12,
@@ -162,8 +151,7 @@
           "archivo": "nivel_012_b.png",
           "descripcion": "Un león"
         }
-      ],
-      "pista": "Cama + león: cambia de color para esconderse"
+      ]
     },
     {
       "id": 13,
@@ -178,8 +166,7 @@
           "archivo": "nivel_013_b.png",
           "descripcion": "El iris de un ojo en primer plano"
         }
-      ],
-      "pista": "Arco + iris: aparece después de la lluvia"
+      ]
     },
     {
       "id": 14,
@@ -194,8 +181,7 @@
           "archivo": "nivel_014_b.png",
           "descripcion": "Un cesto de mimbre"
         }
-      ],
-      "pista": "Balón + cesto: deporte de aros y canastas"
+      ]
     },
     {
       "id": 15,
@@ -210,8 +196,7 @@
           "archivo": "nivel_015_b.png",
           "descripcion": "Una taza de té"
         }
-      ],
-      "pista": "Mar + té: es un planeta rojo"
+      ]
     },
     {
       "id": 16,
@@ -226,8 +211,7 @@
           "archivo": "nivel_016_b.png",
           "descripcion": "Una rata"
         }
-      ],
-      "pista": "Pi + rata: navega buscando tesoros"
+      ]
     },
     {
       "id": 17,
@@ -242,8 +226,7 @@
           "archivo": "nivel_017_b.png",
           "descripcion": "Un mate con bombilla"
         }
-      ],
-      "pista": "Re + mate: se usa en el fútbol y en las subastas"
+      ]
     },
     {
       "id": 18,
@@ -262,8 +245,7 @@
           "archivo": "nivel_018_c.png",
           "descripcion": "Un muñeco de nieve"
         }
-      ],
-      "pista": "La estación más fría del año"
+      ]
     },
     {
       "id": 19,
@@ -282,8 +264,7 @@
           "archivo": "nivel_019_c.png",
           "descripcion": "Un lápiz y un cuaderno"
         }
-      ],
-      "pista": "Lugar donde aprendés con tus compañeros"
+      ]
     },
     {
       "id": 20,
@@ -302,8 +283,7 @@
           "archivo": "nivel_020_c.png",
           "descripcion": "Un camión rojo con escalera"
         }
-      ],
-      "pista": "Profesión de quien apaga incendios"
+      ]
     },
     {
       "id": 21,
@@ -314,8 +294,7 @@
           "archivo": "nivel_021.jpg",
           "descripcion": "Una gran hada violeta volando sobre un pueblo"
         }
-      ],
-      "pista": "Gran + hada: ciudad de España y también una fruta"
+      ]
     },
     {
       "id": 22,
@@ -326,8 +305,7 @@
           "archivo": "nivel_022.jpg",
           "descripcion": "Un limón con antiparras nadando en una pileta"
         }
-      ],
-      "pista": "Limón + nada: bebida fresca para el verano"
+      ]
     },
     {
       "id": 23,
@@ -338,8 +316,18 @@
           "archivo": "nivel_023.jpg",
           "descripcion": "Una chica tomando una taza de té"
         }
-      ],
-      "pista": "Toma + té: verdura roja de la ensalada"
+      ]
+    },
+    {
+      "id": 24,
+      "respuesta": "Florencia",
+      "dificultad": "intermedio",
+      "imagenes": [
+        {
+          "archivo": "nivel_024.jpg",
+          "descripcion": "Una flor y una boca sonriente mostrando las encías"
+        }
+      ]
     }
   ]
 }

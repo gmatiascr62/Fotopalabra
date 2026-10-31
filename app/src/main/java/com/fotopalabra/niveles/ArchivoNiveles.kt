@@ -19,7 +19,6 @@ data class NivelJson(
     val respuesta: String,
     val dificultad: String = "facil",
     val imagenes: List<@Serializable(with = ImagenJsonSerializer::class) ImagenJson> = emptyList(),
-    val pista: String = "",
     /** Cantidad total de letras disponibles (opcional). */
     val fichas: Int? = null,
 )

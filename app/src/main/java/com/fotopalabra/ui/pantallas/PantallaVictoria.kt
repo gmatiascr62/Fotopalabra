@@ -7,8 +7,7 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.ExperimentalLayoutApi
-import androidx.compose.foundation.layout.FlowRow
+import androidx.compose.foundation.layout.BoxWithConstraints
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
@@ -48,7 +47,6 @@ import kotlinx.coroutines.delay
 
 private val FELICITACIONES = listOf("¡Excelente!", "¡Muy bien!", "¡Genial!", "¡Lo lograste!", "¡Bárbaro!", "¡Increíble!")
 
-@OptIn(ExperimentalLayoutApi::class)
 @Composable
 fun PantallaVictoria(
     nivel: Nivel,
@@ -99,20 +97,29 @@ fun PantallaVictoria(
             Spacer(Modifier.height(24.dp))
 
             // Palabra descubierta.
-            FlowRow(
-                Modifier.widthIn(max = 560.dp).scale(escala.value),
-                horizontalArrangement = Arrangement.spacedBy(6.dp, Alignment.CenterHorizontally),
-                verticalArrangement = Arrangement.spacedBy(6.dp),
-            ) {
-                nivel.solucion.forEach { letra ->
-                    Box(
-                        Modifier
-                            .size(46.dp)
-                            .clip(RoundedCornerShape(10.dp))
-                            .background(Colores.Verde),
-                        contentAlignment = Alignment.Center,
-                    ) {
-                        Text(letra.toString(), color = Colores.Blanco, fontSize = 24.sp, fontWeight = FontWeight.Black)
+            BoxWithConstraints(Modifier.widthIn(max = 560.dp).fillMaxWidth()) {
+                val largo = nivel.solucion.length
+                val espacio = if (largo > 10) 3.dp else 6.dp
+                val tamano = tamanoQueEntra(maxWidth, largo, espacio, maximo = 46.dp)
+                Row(
+                    Modifier.fillMaxWidth().scale(escala.value),
+                    horizontalArrangement = Arrangement.spacedBy(espacio, Alignment.CenterHorizontally),
+                ) {
+                    nivel.solucion.forEach { letra ->
+                        Box(
+                            Modifier
+                                .size(tamano)
+                                .clip(RoundedCornerShape(tamano * 0.22f))
+                                .background(Colores.Verde),
+                            contentAlignment = Alignment.Center,
+                        ) {
+                            Text(
+                                letra.toString(),
+                                color = Colores.Blanco,
+                                fontSize = (tamano.value * 0.52f).sp,
+                                fontWeight = FontWeight.Black,
+                            )
+                        }
                     }
                 }
             }

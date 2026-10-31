@@ -73,7 +73,6 @@ object CargadorNiveles {
                 solucion = Texto.normalizar(n.respuesta),
                 dificultad = Dificultad.desdeTexto(n.dificultad)!!,
                 imagenes = n.imagenes.map { Imagen(it.archivo.trim(), it.descripcion.trim()) },
-                pista = n.pista.trim(),
                 fichas = n.fichas,
             )
         }

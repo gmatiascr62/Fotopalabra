@@ -38,6 +38,5 @@ data class Nivel(
     val solucion: String,
     val dificultad: Dificultad,
     val imagenes: List<Imagen>,
-    val pista: String,
     val fichas: Int?,
 )

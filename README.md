@@ -5,7 +5,7 @@ palabra que representan una o varias imágenes (por ejemplo: **sol + dado = SOLD
 
 - Kotlin + Jetpack Compose, Android 7.0 (API 24) o superior.
 - Sin internet, sin registro, sin APIs pagas. Sin permisos especiales.
-- 23 niveles de prueba. El nivel 21 ya tiene su ilustración definitiva.
+- 24 niveles de prueba. El nivel 21 ya tiene su ilustración definitiva.
 - **Para agregar imágenes o niveles, ver [NIVELES.md](NIVELES.md).**
 
 ## Cómo se juega
@@ -19,7 +19,6 @@ palabra que representan una o varias imágenes (por ejemplo: **sol + dado = SOLD
 
 | Pista | Costo | Efecto |
 |---|---|---|
-| Pista | 15 | Muestra una frase de ayuda |
 | Revelar letra | 25 | Fija una letra correcta (se puede usar varias veces) |
 | Quitar letras | 40 | Elimina todas las letras que sobran |
 
@@ -35,7 +34,7 @@ app/src/main/
 │   ├── motor/               Motor del juego: estado inmutable, colocar/quitar letras, comprobar,
 │   │                        generación determinista de letras, normalización (tildes, Ñ)
 │   ├── niveles/             Base de datos de niveles: formato JSON, validación, catálogo
-│   ├── pistas/              Sistema de pistas: revelar letra, quitar letras, pista textual
+│   ├── pistas/              Sistema de pistas: revelar letra y quitar letras que sobran
 │   ├── monedas/             Sistema de monedas: recompensas y cobro de pistas
 │   ├── progreso/            Guardado: progreso, estadísticas, ajustes, reglas de desbloqueo
 │   ├── datos/               Adaptadores Android: lectura de assets y SharedPreferences

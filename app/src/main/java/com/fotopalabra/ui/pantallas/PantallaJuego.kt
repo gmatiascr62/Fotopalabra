@@ -10,8 +10,6 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.BoxWithConstraints
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.ColumnScope
-import androidx.compose.foundation.layout.ExperimentalLayoutApi
-import androidx.compose.foundation.layout.FlowRow
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxHeight
@@ -41,9 +39,10 @@ import androidx.compose.ui.hapticfeedback.HapticFeedbackType
 import androidx.compose.ui.platform.LocalHapticFeedback
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.unit.Dp
+import androidx.compose.ui.unit.coerceAtLeast
 import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.min
 import androidx.compose.ui.unit.sp
 import com.fotopalabra.pistas.TipoPista
 import com.fotopalabra.progreso.Progreso
@@ -175,7 +174,6 @@ fun PantallaJuego(
     }
 }
 
-@OptIn(ExperimentalLayoutApi::class)
 @Composable
 private fun ColumnScope.ZonaRespuesta(
     partida: PartidaUi,
@@ -184,35 +182,18 @@ private fun ColumnScope.ZonaRespuesta(
     abrirPistas: () -> Unit,
 ) {
     val estado = partida.estado
-    if (partida.pistas.textoVisible && partida.nivel.pista.isNotBlank()) {
-        Text(
-            "Pista: ${partida.nivel.pista}",
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(vertical = 4.dp)
-                .clip(RoundedCornerShape(14.dp))
-                .background(Colores.VioletaOscuro.copy(alpha = 0.45f))
-                .padding(horizontal = 14.dp, vertical = 8.dp),
-            color = Colores.Amarillo,
-            fontWeight = FontWeight.Bold,
-            textAlign = TextAlign.Center,
-        )
-    }
-
+    // Casilleros: siempre en un solo renglón; se achican hasta que entra la palabra.
     BoxWithConstraints(Modifier.fillMaxWidth().widthIn(max = 640.dp)) {
         val largo = estado.casilleros.size
-        val porFila = if (largo <= 9) largo else (largo + 1) / 2
-        val espacio = 6.dp
-        val tamano = min(54.dp, (maxWidth - espacio * (porFila - 1)) / porFila)
+        val espacio = if (largo > 10) 3.dp else 6.dp
+        val tamano = tamanoQueEntra(maxWidth, largo, espacio, maximo = 54.dp)
         val incorrecto = estado.completo && !partida.resuelto && partida.fallos > 0
-        FlowRow(
+        Row(
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(vertical = 10.dp)
                 .offset { IntOffset(desplazamiento.dp.roundToPx(), 0) },
             horizontalArrangement = Arrangement.spacedBy(espacio, Alignment.CenterHorizontally),
-            verticalArrangement = Arrangement.spacedBy(espacio),
-            maxItemsInEachRow = porFila,
         ) {
             estado.casilleros.forEachIndexed { i, c ->
                 val estilo = when {
@@ -227,22 +208,27 @@ private fun ColumnScope.ZonaRespuesta(
         }
     }
 
+    // Letras disponibles: dos renglones fijos.
     BoxWithConstraints(Modifier.fillMaxWidth().widthIn(max = 640.dp)) {
-        val total = estado.fichas.size
-        val porFila = (total + 1) / 2
+        val porFila = (estado.fichas.size + 1) / 2
         val espacio = 8.dp
-        val tamano = min(58.dp, (maxWidth - espacio * (porFila - 1)) / porFila)
-        FlowRow(
-            modifier = Modifier.fillMaxWidth().padding(vertical = 6.dp),
-            horizontalArrangement = Arrangement.spacedBy(espacio, Alignment.CenterHorizontally),
+        val tamano = tamanoQueEntra(maxWidth, porFila, espacio, maximo = 58.dp)
+        Column(
+            Modifier.fillMaxWidth().padding(vertical = 6.dp),
             verticalArrangement = Arrangement.spacedBy(espacio),
-            maxItemsInEachRow = porFila,
         ) {
-            estado.fichas.forEach { f ->
-                if (f.eliminada) {
-                    Spacer(Modifier.width(tamano).height(tamano).alpha(0f))
-                } else {
-                    FichaLetra(f.letra, estado.estaDisponible(f), tamano) { acciones.tocarFicha(f.id) }
+            estado.fichas.chunked(porFila).forEach { fila ->
+                Row(
+                    Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.spacedBy(espacio, Alignment.CenterHorizontally),
+                ) {
+                    fila.forEach { f ->
+                        if (f.eliminada) {
+                            Spacer(Modifier.width(tamano).height(tamano))
+                        } else {
+                            FichaLetra(f.letra, estado.estaDisponible(f), tamano) { acciones.tocarFicha(f.id) }
+                        }
+                    }
                 }
             }
         }
@@ -340,3 +326,13 @@ private fun OpcionPista(tipo: TipoPista, disponible: Boolean, alcanza: Boolean, 
     }
 }
 
+
+/**
+ * Tamaño de cada casillero para que [cantidad] casilleros entren en un renglón de [ancho].
+ * Se resta un pequeño margen para que el redondeo a píxeles nunca empuje el último al renglón siguiente.
+ */
+internal fun tamanoQueEntra(ancho: Dp, cantidad: Int, espacio: Dp, maximo: Dp): Dp {
+    if (cantidad <= 0) return maximo
+    val disponible = ancho - espacio * (cantidad - 1) - 2.dp
+    return minOf(maximo, (disponible / cantidad - 0.5.dp).coerceAtLeast(12.dp))
+}

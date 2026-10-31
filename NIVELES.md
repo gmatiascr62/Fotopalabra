@@ -62,6 +62,7 @@ Desbloquear todos los niveles**. Al apagarlo, el progreso real sigue intacto.
 | ~~nivel_021.jpg~~ ✔ | Ya cargada: una gran hada sobre un pueblo → GRANADA (gran + hada) |
 | ~~nivel_022.jpg~~ ✔ | Ya cargada: un limón con antiparras nadando → LIMONADA (limón + nada) |
 | ~~nivel_023.jpg~~ ✔ | Ya cargada: una chica tomando una taza de té → TOMATE (toma + té) |
+| ~~nivel_024.jpg~~ ✔ | Ya cargada: una flor y una boca mostrando las encías → FLORENCIA (flor + encía) |
 
 > Consejo para ChatGPT: pedí "ilustración plana, colorida, fondo blanco liso, sin texto,
 > estilo juego infantil, formato cuadrado". Mantener el mismo estilo en todas ayuda a que
@@ -82,8 +83,7 @@ Desbloquear todos los niveles**. Al apagarlo, el progreso real sigue intacto.
       "imagenes": [
         { "archivo": "nivel_021_a.png", "descripcion": "Una flecha girando en círculo" },
         { "archivo": "nivel_021_b.png", "descripcion": "Un sol" }
-      ],
-      "pista": "Flor amarilla que sigue al sol"
+      ]
     }
   ]
 }
@@ -96,7 +96,6 @@ Desbloquear todos los niveles**. Al apagarlo, el progreso real sigue intacto.
 | `dificultad` | no | `facil` (10 monedas), `intermedio` (15) o `dificil` (25). Por defecto `facil`. Resolver sin pistas suma 5 extra. |
 | `imagenes` | sí | Una o más imágenes. Cada una puede ser un objeto `{ "archivo", "descripcion" }` o simplemente el nombre: `"nivel_021.png"`. |
 | `descripcion` | no | Qué debe mostrar la imagen. Se ve en el marcador temporal y en la lista de pendientes. |
-| `pista` | no | Frase que se compra con la pista "Pista". Si está vacía, esa pista no se ofrece. |
 | `fichas` | no | Cantidad total de letras disponibles (entre el largo de la respuesta y 24). Por defecto se calcula según el largo. |
 
 ### Cientos o miles de niveles

@@ -178,7 +178,7 @@ class JuegoViewModel(app: Application) : AndroidViewModel(app) {
 
     fun pistaDisponible(tipo: TipoPista): Boolean {
         val p = partida ?: return false
-        return !p.resuelto && SistemaPistas.disponible(tipo, p.estado, p.pistas, p.nivel.pista.isNotBlank())
+        return !p.resuelto && SistemaPistas.disponible(tipo, p.estado, p.pistas)
     }
 
     fun usarPista(tipo: TipoPista) {
@@ -189,7 +189,6 @@ class JuegoViewModel(app: Application) : AndroidViewModel(app) {
             return
         }
         val (estado, pistas) = when (tipo) {
-            TipoPista.PISTA_TEXTO -> p.estado to p.pistas.copy(textoVisible = true)
             TipoPista.ELIMINAR_LETRAS -> SistemaPistas.eliminarLetras(p.estado) to p.pistas.copy(letrasEliminadas = true)
             TipoPista.REVELAR_LETRA -> {
                 val (e, posicion) = SistemaPistas.revelarLetra(p.estado) ?: return

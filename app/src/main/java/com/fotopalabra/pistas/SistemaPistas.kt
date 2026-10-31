@@ -7,7 +7,6 @@ import kotlinx.serialization.Serializable
 import kotlin.random.Random
 
 enum class TipoPista(val titulo: String, val descripcion: String, val costo: Int) {
-    PISTA_TEXTO("Pista", "Muestra una frase que ayuda a adivinar.", 15),
     REVELAR_LETRA("Revelar letra", "Coloca una letra correcta en su lugar.", 25),
     ELIMINAR_LETRAS("Quitar letras", "Elimina todas las letras que sobran.", 40),
 }
@@ -15,19 +14,17 @@ enum class TipoPista(val titulo: String, val descripcion: String, val costo: Int
 /** Pistas ya compradas en un nivel. Se guardan para no perderlas al cerrar la app. */
 @Serializable
 data class PistasNivel(
-    val textoVisible: Boolean = false,
     val letrasEliminadas: Boolean = false,
     val reveladas: List<Int> = emptyList(),
 ) {
-    val cantidad: Int get() = (if (textoVisible) 1 else 0) + (if (letrasEliminadas) 1 else 0) + reveladas.size
+    val cantidad: Int get() = (if (letrasEliminadas) 1 else 0) + reveladas.size
 }
 
 /** Aplica las pistas sobre el estado de la partida. No cobra: eso lo hace la billetera. */
 object SistemaPistas {
 
-    fun disponible(tipo: TipoPista, estado: EstadoPartida, pistas: PistasNivel, tienePistaTexto: Boolean): Boolean =
+    fun disponible(tipo: TipoPista, estado: EstadoPartida, pistas: PistasNivel): Boolean =
         when (tipo) {
-            TipoPista.PISTA_TEXTO -> tienePistaTexto && !pistas.textoVisible
             TipoPista.ELIMINAR_LETRAS -> !pistas.letrasEliminadas && estado.fichas.any { !it.deLaSolucion && !it.eliminada }
             // Siempre debe quedar al menos una letra para que el jugador la complete.
             TipoPista.REVELAR_LETRA -> estado.casilleros.count { !it.revelado } > 1
