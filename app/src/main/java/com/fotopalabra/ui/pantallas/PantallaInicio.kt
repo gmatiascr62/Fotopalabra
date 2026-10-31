@@ -54,20 +54,6 @@ fun PantallaInicio(
     onAjustes: () -> Unit,
 ) {
     Fondo {
-        Row(
-            Modifier.fillMaxWidth().padding(12.dp),
-            horizontalArrangement = Arrangement.SpaceBetween,
-            verticalAlignment = Alignment.CenterVertically,
-        ) {
-            ContadorMonedas(progreso.monedas)
-            IconButton(
-                onClick = onAjustes,
-                modifier = Modifier.clip(CircleShape).background(Colores.VioletaOscuro.copy(alpha = 0.4f)),
-            ) {
-                Icon(Icons.Filled.Settings, contentDescription = "Configuración", tint = Colores.Blanco)
-            }
-        }
-
         Column(
             Modifier
                 .fillMaxSize()
@@ -138,6 +124,22 @@ fun PantallaInicio(
                     alto = 52.dp,
                     tamanoTexto = 18,
                 )
+            }
+        }
+
+        // La barra va al final para quedar por encima del contenido desplazable
+        // (si no, el contenido tapa el engranaje y no recibe los toques).
+        Row(
+            Modifier.align(Alignment.TopCenter).fillMaxWidth().padding(12.dp),
+            horizontalArrangement = Arrangement.SpaceBetween,
+            verticalAlignment = Alignment.CenterVertically,
+        ) {
+            ContadorMonedas(progreso.monedas)
+            IconButton(
+                onClick = onAjustes,
+                modifier = Modifier.clip(CircleShape).background(Colores.VioletaOscuro.copy(alpha = 0.4f)),
+            ) {
+                Icon(Icons.Filled.Settings, contentDescription = "Configuración", tint = Colores.Blanco)
             }
         }
     }
