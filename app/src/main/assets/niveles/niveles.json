@@ -328,6 +328,18 @@
         }
       ],
       "pista": "Limón + nada: bebida fresca para el verano"
+    },
+    {
+      "id": 23,
+      "respuesta": "Tomate",
+      "dificultad": "intermedio",
+      "imagenes": [
+        {
+          "archivo": "nivel_023.jpg",
+          "descripcion": "Una chica tomando una taza de té"
+        }
+      ],
+      "pista": "Toma + té: verdura roja de la ensalada"
     }
   ]
 }

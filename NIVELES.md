@@ -19,7 +19,7 @@ Carpeta: `app/src/main/assets/niveles/`
 | 2 imágenes | `nivel_008_a.png`, `nivel_008_b.png` |
 | 3 imágenes | `nivel_018_a.png`, `nivel_018_b.png`, `nivel_018_c.png` |
 
-- Formatos: `.png`, `.jpg`, `.jpeg` o `.webp` (webp ocupa menos).
+- Formatos: `.png`, `.jpg`, `.jpeg` o `.webp` (webp ocupa menos). Conviene que cada imagen pese menos de 300 KB: si ChatGPT entrega un PNG de varios MB, reducilo o guardalo como JPG.
 - Tamaño recomendado: **cuadrada, 768×768 o 1024×1024 px**. La app las reduce al tamaño de la pantalla para ahorrar memoria.
 - Si el nivel tiene **una sola imagen**, también puede ser apaisada o vertical (ej. 1408×768): se muestra con su proporción real. Cuando hay varias imágenes se recomienda que sean cuadradas.
 - Sin espacios ni tildes en el nombre del archivo.
@@ -61,6 +61,7 @@ Desbloquear todos los niveles**. Al apagarlo, el progreso real sigue intacto.
 | nivel_020_a/_b/_c.png | Casco rojo / Manguera / Camión rojo con escalera → BOMBERO |
 | ~~nivel_021.jpg~~ ✔ | Ya cargada: una gran hada sobre un pueblo → GRANADA (gran + hada) |
 | ~~nivel_022.jpg~~ ✔ | Ya cargada: un limón con antiparras nadando → LIMONADA (limón + nada) |
+| ~~nivel_023.jpg~~ ✔ | Ya cargada: una chica tomando una taza de té → TOMATE (toma + té) |
 
 > Consejo para ChatGPT: pedí "ilustración plana, colorida, fondo blanco liso, sin texto,
 > estilo juego infantil, formato cuadrado". Mantener el mismo estilo en todas ayuda a que
