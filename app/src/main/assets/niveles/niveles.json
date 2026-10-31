@@ -316,6 +316,18 @@
         }
       ],
       "pista": "Gran + hada: ciudad de España y también una fruta"
+    },
+    {
+      "id": 22,
+      "respuesta": "Limonada",
+      "dificultad": "intermedio",
+      "imagenes": [
+        {
+          "archivo": "nivel_022.png",
+          "descripcion": "Un limón con antiparras nadando en una pileta"
+        }
+      ],
+      "pista": "Limón + nada: bebida fresca para el verano"
     }
   ]
 }
