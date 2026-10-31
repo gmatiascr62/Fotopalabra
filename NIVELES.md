@@ -32,6 +32,9 @@ debe dibujarse. Apenas subís el archivo con ese nombre, el marcador desaparece.
 En **Configuración → Imágenes de niveles → Ver imágenes pendientes** la app lista todas
 las imágenes que faltan con su descripción (útil como lista de tareas para ChatGPT).
 
+Para ver un nivel nuevo sin resolver los anteriores, activá **Configuración → Modo prueba →
+Desbloquear todos los niveles**. Al apagarlo, el progreso real sigue intacto.
+
 ### Imágenes que faltan para los 20 niveles de prueba
 
 | Archivo | Qué dibujar |

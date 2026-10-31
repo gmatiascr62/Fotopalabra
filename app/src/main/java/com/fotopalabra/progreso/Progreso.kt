@@ -19,6 +19,8 @@ data class Estadisticas(
 data class Ajustes(
     val avanceAutomatico: Boolean = true,
     val vibracion: Boolean = true,
+    /** Modo prueba: permite jugar cualquier nivel sin haber resuelto los anteriores. */
+    val desbloquearTodo: Boolean = false,
 )
 
 /**

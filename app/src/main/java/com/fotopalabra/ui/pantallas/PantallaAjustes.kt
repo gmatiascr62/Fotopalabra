@@ -75,6 +75,18 @@ fun PantallaAjustes(
                     }
                 }
 
+                Tarjeta("Modo prueba") {
+                    Interruptor("Desbloquear todos los niveles", progreso.ajustes.desbloquearTodo) { v ->
+                        onCambiarAjustes { it.copy(desbloquearTodo = v) }
+                    }
+                    Text(
+                        "Sirve para revisar niveles e ilustraciones nuevas sin resolver los anteriores. " +
+                            "No borra el progreso: al apagarlo, vuelven a bloquearse los que no completaste.",
+                        style = MaterialTheme.typography.bodyMedium,
+                        color = Colores.Texto.copy(alpha = 0.7f),
+                    )
+                }
+
                 val est = progreso.estadisticas
                 Tarjeta("Estadísticas") {
                     Dato("Niveles completados", "${progreso.completados.size}")

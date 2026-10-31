@@ -76,6 +76,12 @@ class NivelesYProgresoTest {
         assertEquals(100 + ganadas, recargado.monedas)
         assertTrue(recargado.pistas.isEmpty())
 
+        // Modo prueba: todo desbloqueado sin perder el progreso.
+        val bloqueado = RepositorioProgreso(Memoria()).actual
+        assertFalse(ReglasProgreso.estaDesbloqueado(bloqueado, n2))
+        val prueba = bloqueado.copy(ajustes = bloqueado.ajustes.copy(desbloquearTodo = true))
+        assertTrue(ReglasProgreso.estaDesbloqueado(prueba, n2))
+
         // Repetir un nivel no vuelve a dar monedas.
         assertEquals(0, ReglasProgreso.completar(recargado, n1).monedasGanadas)
     }

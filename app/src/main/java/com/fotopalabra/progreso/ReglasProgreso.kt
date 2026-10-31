@@ -16,7 +16,9 @@ data class NivelCompletado(
 object ReglasProgreso {
 
     fun estaDesbloqueado(progreso: Progreso, nivel: Nivel): Boolean =
-        nivel.numero <= progreso.desbloqueadoHasta || nivel.id in progreso.completados
+        progreso.ajustes.desbloquearTodo ||
+            nivel.numero <= progreso.desbloqueadoHasta ||
+            nivel.id in progreso.completados
 
     fun estaCompletado(progreso: Progreso, nivel: Nivel): Boolean = nivel.id in progreso.completados
 
