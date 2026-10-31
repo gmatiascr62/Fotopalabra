@@ -1,0 +1,333 @@
+{
+  "version": 1,
+  "niveles": [
+    {
+      "id": 1,
+      "respuesta": "Sol",
+      "dificultad": "facil",
+      "imagenes": [
+        {
+          "archivo": "nivel_001.png",
+          "descripcion": "Un sol amarillo y brillante con rayos"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "respuesta": "Gato",
+      "dificultad": "facil",
+      "imagenes": [
+        {
+          "archivo": "nivel_002.png",
+          "descripcion": "Un gato sentado"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "respuesta": "Casa",
+      "dificultad": "facil",
+      "imagenes": [
+        {
+          "archivo": "nivel_003.png",
+          "descripcion": "Una casa con techo rojo, puerta y ventanas"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "respuesta": "Luna",
+      "dificultad": "facil",
+      "imagenes": [
+        {
+          "archivo": "nivel_004.png",
+          "descripcion": "Una luna en cuarto creciente en el cielo nocturno"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "respuesta": "Árbol",
+      "dificultad": "facil",
+      "imagenes": [
+        {
+          "archivo": "nivel_005.png",
+          "descripcion": "Un árbol grande con tronco marrón y copa verde"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "respuesta": "Pelota",
+      "dificultad": "facil",
+      "imagenes": [
+        {
+          "archivo": "nivel_006.png",
+          "descripcion": "Una pelota de colores"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "respuesta": "Manzana",
+      "dificultad": "facil",
+      "imagenes": [
+        {
+          "archivo": "nivel_007.png",
+          "descripcion": "Una manzana roja con una hoja"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "respuesta": "Soldado",
+      "dificultad": "intermedio",
+      "imagenes": [
+        {
+          "archivo": "nivel_008_a.png",
+          "descripcion": "Un sol"
+        },
+        {
+          "archivo": "nivel_008_b.png",
+          "descripcion": "Un dado de seis caras"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "respuesta": "Caracol",
+      "dificultad": "intermedio",
+      "imagenes": [
+        {
+          "archivo": "nivel_009_a.png",
+          "descripcion": "Una cara sonriente"
+        },
+        {
+          "archivo": "nivel_009_b.png",
+          "descripcion": "Una col (repollo)"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "respuesta": "Telaraña",
+      "dificultad": "intermedio",
+      "imagenes": [
+        {
+          "archivo": "nivel_010_a.png",
+          "descripcion": "Un rollo de tela"
+        },
+        {
+          "archivo": "nivel_010_b.png",
+          "descripcion": "Una araña"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "respuesta": "Pantalón",
+      "dificultad": "intermedio",
+      "imagenes": [
+        {
+          "archivo": "nivel_011_a.png",
+          "descripcion": "Un pan"
+        },
+        {
+          "archivo": "nivel_011_b.png",
+          "descripcion": "El talón de un pie"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "respuesta": "Camaleón",
+      "dificultad": "intermedio",
+      "imagenes": [
+        {
+          "archivo": "nivel_012_a.png",
+          "descripcion": "Una cama"
+        },
+        {
+          "archivo": "nivel_012_b.png",
+          "descripcion": "Un león"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "respuesta": "Arcoíris",
+      "dificultad": "intermedio",
+      "imagenes": [
+        {
+          "archivo": "nivel_013_a.png",
+          "descripcion": "Un arco con flecha"
+        },
+        {
+          "archivo": "nivel_013_b.png",
+          "descripcion": "El iris de un ojo en primer plano"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "respuesta": "Baloncesto",
+      "dificultad": "intermedio",
+      "imagenes": [
+        {
+          "archivo": "nivel_014_a.png",
+          "descripcion": "Un balón"
+        },
+        {
+          "archivo": "nivel_014_b.png",
+          "descripcion": "Un cesto de mimbre"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "respuesta": "Marte",
+      "dificultad": "dificil",
+      "imagenes": [
+        {
+          "archivo": "nivel_015_a.png",
+          "descripcion": "El mar con olas"
+        },
+        {
+          "archivo": "nivel_015_b.png",
+          "descripcion": "Una taza de té"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "respuesta": "Pirata",
+      "dificultad": "dificil",
+      "imagenes": [
+        {
+          "archivo": "nivel_016_a.png",
+          "descripcion": "El símbolo matemático pi (π)"
+        },
+        {
+          "archivo": "nivel_016_b.png",
+          "descripcion": "Una rata"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "respuesta": "Remate",
+      "dificultad": "dificil",
+      "imagenes": [
+        {
+          "archivo": "nivel_017_a.png",
+          "descripcion": "Una nota musical con la sílaba RE en un pentagrama"
+        },
+        {
+          "archivo": "nivel_017_b.png",
+          "descripcion": "Un mate con bombilla"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "respuesta": "Invierno",
+      "dificultad": "dificil",
+      "imagenes": [
+        {
+          "archivo": "nivel_018_a.png",
+          "descripcion": "Una bufanda de lana"
+        },
+        {
+          "archivo": "nivel_018_b.png",
+          "descripcion": "Un copo de nieve"
+        },
+        {
+          "archivo": "nivel_018_c.png",
+          "descripcion": "Un muñeco de nieve"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "respuesta": "Escuela",
+      "dificultad": "dificil",
+      "imagenes": [
+        {
+          "archivo": "nivel_019_a.png",
+          "descripcion": "Un pizarrón con tiza"
+        },
+        {
+          "archivo": "nivel_019_b.png",
+          "descripcion": "Una mochila"
+        },
+        {
+          "archivo": "nivel_019_c.png",
+          "descripcion": "Un lápiz y un cuaderno"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "respuesta": "Bombero",
+      "dificultad": "dificil",
+      "imagenes": [
+        {
+          "archivo": "nivel_020_a.png",
+          "descripcion": "Un casco rojo"
+        },
+        {
+          "archivo": "nivel_020_b.png",
+          "descripcion": "Una manguera"
+        },
+        {
+          "archivo": "nivel_020_c.png",
+          "descripcion": "Un camión rojo con escalera"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "respuesta": "Granada",
+      "dificultad": "dificil",
+      "imagenes": [
+        {
+          "archivo": "nivel_021.jpg",
+          "descripcion": "Una gran hada violeta volando sobre un pueblo"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "respuesta": "Limonada",
+      "dificultad": "intermedio",
+      "imagenes": [
+        {
+          "archivo": "nivel_022.jpg",
+          "descripcion": "Un limón con antiparras nadando en una pileta"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "respuesta": "Tomate",
+      "dificultad": "intermedio",
+      "imagenes": [
+        {
+          "archivo": "nivel_023.jpg",
+          "descripcion": "Una chica tomando una taza de té"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "respuesta": "Florencia",
+      "dificultad": "intermedio",
+      "imagenes": [
+        {
+          "archivo": "nivel_024.jpg",
+          "descripcion": "Una flor y una boca sonriente mostrando las encías"
+        }
+      ]
+    }
+  ]
+}
