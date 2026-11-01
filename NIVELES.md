@@ -63,6 +63,7 @@ Desbloquear todos los niveles**. Al apagarlo, el progreso real sigue intacto.
 | ~~nivel_022.jpg~~ ✔ | Ya cargada: un limón con antiparras nadando → LIMONADA (limón + nada) |
 | ~~nivel_023.jpg~~ ✔ | Ya cargada: una chica tomando una taza de té → TOMATE (toma + té) |
 | ~~nivel_024.jpg~~ ✔ | Ya cargada: una flor y una boca mostrando las encías → FLORENCIA (flor + encía) |
+| ~~nivel_025.jpg~~ ✔ | Ya cargada: las letras G y A enojadas → MÁLAGA (mala + GA) |
 
 > Consejo para ChatGPT: pedí "ilustración plana, colorida, fondo blanco liso, sin texto,
 > estilo juego infantil, formato cuadrado". Mantener el mismo estilo en todas ayuda a que
