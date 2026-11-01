@@ -328,6 +328,17 @@
           "descripcion": "Una flor y una boca sonriente mostrando las encías"
         }
       ]
+    },
+    {
+      "id": 25,
+      "respuesta": "Málaga",
+      "dificultad": "dificil",
+      "imagenes": [
+        {
+          "archivo": "nivel_025.jpg",
+          "descripcion": "Las letras G y A con cara de enojadas (mala GA)"
+        }
+      ]
     }
   ]
 }
