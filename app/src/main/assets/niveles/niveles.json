@@ -339,6 +339,17 @@
           "descripcion": "Las letras G y A con cara de enojadas (mala GA)"
         }
       ]
+    },
+    {
+      "id": 26,
+      "respuesta": "París",
+      "dificultad": "dificil",
+      "imagenes": [
+        {
+          "archivo": "nivel_026.jpg",
+          "descripcion": "Dos veces la sílaba IS, una celeste y una rosa (un par de IS)"
+        }
+      ]
     }
   ]
 }
